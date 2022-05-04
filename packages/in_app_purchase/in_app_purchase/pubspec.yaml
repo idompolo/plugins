@@ -13,22 +13,17 @@ flutter:
     platforms:
       android:
         default_package: in_app_purchase_android
-      ios:
-        default_package: in_app_purchase_storekit
+      # ios:
+      #   default_package: in_app_purchase_storekit
 
 dependencies:
   flutter:
     sdk: flutter
-  in_app_purchase_android: ^0.2.1
-  in_app_purchase_platform_interface: ^1.0.0
-  in_app_purchase_storekit: ^0.3.0+1
+  in_app_purchase_android:
+    path: ../in_app_purchase_android
+  in_app_purchase_platform_interface: 
+    path: ../in_app_purchase_platform_interface
+  in_app_purchase_storekit: 
+    path: ../in_app_purchase_storekit
 
 dev_dependencies:
-  flutter_driver:
-    sdk: flutter
-  flutter_test:
-    sdk: flutter
-  integration_test:
-    sdk: flutter
-  plugin_platform_interface: ^2.0.0
-  test: ^1.16.0
